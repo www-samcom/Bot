@@ -1,0 +1,28 @@
+# ==============================
+# Telegram Sales Bot - Dependencies
+# Compatible: Hugging Face Spaces / Windows / Linux
+# ==============================
+
+# Telegram Bot Framework
+aiogram==3.4.1
+
+# Async support
+aiohttp>=3.9.0
+aiosignal>=1.3.0
+
+# Web Server (للإبقاء على البوت حياً في Hugging Face Spaces)
+flask>=2.3.0
+
+# Utilities
+python-dotenv>=1.0.0
+attrs>=23.0.0
+frozenlist>=1.4.0
+multidict>=6.0.0
+yarl>=1.9.0
+magic-filter>=1.0.12
+certifi>=2024.2.2
+
+# NOTE for Hugging Face Spaces:
+# - Flask يعمل على المنفذ 7860 (المنفذ الافتراضي لـ HF Spaces)
+# - اربط المسار "/" بـ cron-job.org كل 5 دقائق لمنع النوم
+# Run: pip install -r requirements.txt
